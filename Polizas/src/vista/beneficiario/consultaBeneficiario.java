@@ -26,19 +26,151 @@ public class consultaBeneficiario extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        panResultado = new javax.swing.JPanel();
+        lblPorc = new javax.swing.JLabel();
+        txtFechaNa = new javax.swing.JTextField();
+        txtPorcePoli = new javax.swing.JTextField();
+        txtClavePoliza1 = new javax.swing.JTextField();
+        txtApeMa = new javax.swing.JTextField();
+        txtApePa = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        lblNombre1 = new javax.swing.JLabel();
+        lblApePa = new javax.swing.JLabel();
+        lblApeMa = new javax.swing.JLabel();
+        lblClavePoli1 = new javax.swing.JLabel();
+        lblPorce = new javax.swing.JLabel();
+        lblFechaNa = new javax.swing.JLabel();
+        lblClavePoli = new javax.swing.JLabel();
+        txtClavePoliza = new javax.swing.JTextField();
+        btnBuscar = new javax.swing.JButton();
+
+        setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Consulta Beneficiario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 24), new java.awt.Color(102, 255, 204))); // NOI18N
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panResultado.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Resultado", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 18), new java.awt.Color(102, 255, 204))); // NOI18N
+
+        lblPorc.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblPorc.setText("%");
+
+        lblNombre1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblNombre1.setText("Nombre (s):");
+
+        lblApePa.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblApePa.setText("Apellido Paterno :");
+
+        lblApeMa.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblApeMa.setText("Apellido Materno :");
+
+        lblClavePoli1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblClavePoli1.setText("Clave Poliza :");
+
+        lblPorce.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblPorce.setText("Porcentaje :");
+
+        lblFechaNa.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblFechaNa.setText("Fecha Nacimiento :");
+
+        javax.swing.GroupLayout panResultadoLayout = new javax.swing.GroupLayout(panResultado);
+        panResultado.setLayout(panResultadoLayout);
+        panResultadoLayout.setHorizontalGroup(
+            panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panResultadoLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panResultadoLayout.createSequentialGroup()
+                        .addComponent(lblFechaNa)
+                        .addGap(102, 102, 102)
+                        .addComponent(txtFechaNa))
+                    .addGroup(panResultadoLayout.createSequentialGroup()
+                        .addComponent(lblPorce, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtPorcePoli))
+                    .addGroup(panResultadoLayout.createSequentialGroup()
+                        .addComponent(lblClavePoli1, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtClavePoliza1))
+                    .addGroup(panResultadoLayout.createSequentialGroup()
+                        .addComponent(lblApeMa, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtApeMa))
+                    .addGroup(panResultadoLayout.createSequentialGroup()
+                        .addComponent(lblApePa, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNombre)
+                            .addComponent(txtApePa, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblPorc, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
+            .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panResultadoLayout.createSequentialGroup()
+                    .addGap(57, 57, 57)
+                    .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(519, Short.MAX_VALUE)))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        panResultadoLayout.setVerticalGroup(
+            panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panResultadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblApePa, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApePa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblApeMa, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApeMa, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblClavePoli1)
+                    .addComponent(txtClavePoliza1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPorce, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPorcePoli)
+                    .addComponent(lblPorc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblFechaNa, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                    .addComponent(txtFechaNa))
+                .addGap(77, 77, 77))
+            .addGroup(panResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panResultadoLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lblNombre1)
+                    .addContainerGap(264, Short.MAX_VALUE)))
         );
+
+        add(panResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 123, 788, -1));
+
+        lblClavePoli.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblClavePoli.setText("Clave Poliza :");
+        add(lblClavePoli, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
+        add(txtClavePoliza, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 430, 30));
+
+        btnBuscar.setText("Buscar");
+        add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 130, 40));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JLabel lblApeMa;
+    private javax.swing.JLabel lblApePa;
+    private javax.swing.JLabel lblClavePoli;
+    private javax.swing.JLabel lblClavePoli1;
+    private javax.swing.JLabel lblFechaNa;
+    private javax.swing.JLabel lblNombre1;
+    private javax.swing.JLabel lblPorc;
+    private javax.swing.JLabel lblPorce;
+    private javax.swing.JPanel panResultado;
+    private javax.swing.JTextField txtApeMa;
+    private javax.swing.JTextField txtApePa;
+    private javax.swing.JTextField txtClavePoliza;
+    private javax.swing.JTextField txtClavePoliza1;
+    private javax.swing.JTextField txtFechaNa;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtPorcePoli;
     // End of variables declaration//GEN-END:variables
 }
