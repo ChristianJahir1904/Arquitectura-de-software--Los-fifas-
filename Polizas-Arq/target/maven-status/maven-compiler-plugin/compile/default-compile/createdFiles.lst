@@ -1,0 +1,13 @@
+com\mycompany\polizas\arq\repositorio\BeneficiarioPolizaRepository.class
+com\mycompany\polizas\arq\modelo\Poliza.class
+com\mycompany\polizas\arq\controlador\ClienteController.class
+com\mycompany\polizas\arq\prueba.class
+com\mycompany\polizas\arq\repositorio\ClienteRepository.class
+com\mycompany\polizas\arq\prueba$1.class
+com\mycompany\polizas\arq\repositorio\PolizaRepository.class
+com\mycompany\polizas\arq\controlador\PolizaController.class
+com\mycompany\polizas\arq\modelo\BeneficiarioPoliza.class
+com\mycompany\polizas\arq\controlador\BeneficiarioController.class
+com\mycompany\polizas\arq\modelo\Cliente.class
+com\mycompany\polizas\arq\PolizasArq.class
+com\mycompany\polizas\arq\modelo\BeneficiarioPolizaId.class
